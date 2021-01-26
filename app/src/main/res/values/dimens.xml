@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--   WeatherListActivity  -->
+
+    <!-- text  -->
+    <dimen name="activity_weather_title_size">30sp</dimen>
+    <dimen name="activity_weather_side_padding">12dp</dimen>
+    <dimen name="activity_weather_local_text_size">12sp</dimen>
+    <dimen name="activity_weather_today_text_size">18sp</dimen>
+    <dimen name="activity_weather_item_text_size">13sp</dimen>
+    <dimen name="activity_weather_tomorrow_text_size">18sp</dimen>
+
+    <!--  dp  -->
+    <dimen name="activity_weather_title_height">100dp</dimen>
+    <dimen name="activity_weather_header_height">50dp</dimen>
+    <dimen name="activity_weather_content_height">110dp</dimen>
+    <dimen name="activity_weather_list_item_border">1dp</dimen>
+    <!--   WeatherListActivity  -->
+
+    <!--  Loading  -->
+    <dimen name="length_progress_loading">80dp</dimen>
+</resources>

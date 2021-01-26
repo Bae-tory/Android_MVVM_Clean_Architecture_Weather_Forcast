@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- for use these variables in child layout, must be same name-->
+
+    <data>
+
+        <variable
+            name="item"
+            type="Object" />
+
+        <variable
+            name="eventHolder"
+            type="Object" />
+
+        <variable
+            name="vm"
+            type="Object" />
+
+        <variable
+            name="adapterPosition"
+            type="int" />
+
+    </data>
+
+    <!-- must exist -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</layout>

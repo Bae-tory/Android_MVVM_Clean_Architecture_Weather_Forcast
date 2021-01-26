@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Idius</string>
+    <string name="activity_weather_title">Local Weather</string>
+    <string name="activity_weather_title_local">Local</string>
+    <string name="activity_weather_title_today">Today</string>
+    <string name="activity_weather_title_tomorrow">Tomorrow</string>
+
+    <string name="url_weather_svg">%s/%s.svg</string>
+    <string name="url_weather_png_600">%s/png/%s.png</string>
+    <string name="url_weather_png_64">%s/png/64/%s.png</string>
+
+    <string name="percent">%d%%</string>
+    <string name="celsius">%d°C</string>
+
+    <string name="error_msg">%s : %s</string>
+
+    <string name="loading_weather">날씨 정보를 받아오고 있습니다.</string>
+    <string name="fail_get_location_data">지역 데이터를 파싱하는 도중 에러가 발생하였습니다.</string>
+    <string name="fail_get_weather_data">날씨 데이터를 파싱하는 도중 에러가 발생하였습니다.</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_weather_content_height">
+
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_weather_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/activity_weather_item_text_size"
+            app:layout_constraintStart_toEndOf="@id/iv_weather"
+            app:layout_constraintTop_toTopOf="@id/iv_weather"
+            tools:text="날씨" />
+
+        <TextView
+            android:id="@+id/tv_weather_current_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/activity_weather_item_text_size"
+            app:layout_constraintStart_toStartOf="@+id/tv_weather_status"
+            app:layout_constraintTop_toBottomOf="@id/tv_weather_status"
+            tools:text="40°C" />
+
+        <TextView
+            android:id="@+id/tv_weather_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/activity_weather_item_text_size"
+            app:layout_constraintStart_toEndOf="@id/tv_weather_current_temp"
+            app:layout_constraintTop_toTopOf="@+id/tv_weather_current_temp"
+            tools:text="100%" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

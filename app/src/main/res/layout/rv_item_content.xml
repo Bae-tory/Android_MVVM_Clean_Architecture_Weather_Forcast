@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.sungjae.weather_forcast.presentation.model.WeatherPresentation" />
+
+        <variable
+            name="eventHolder"
+            type="com.sungjae.weather_forcast.presentation.listener.RvItemClickListener" />
+
+        <variable
+            name="vm"
+            type="com.sungjae.weather_forcast.WeatherListViewModel" />
+
+        <variable
+            name="adapterPosition"
+            type="int" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_weather_content_height">
+
+        <TextView
+            android:id="@+id/tv_list_title_local"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@{item.locationTitle}"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/activity_weather_local_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/wsv_today"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="title" />
+
+        <com.sungjae.weather_forcast.customview.WeatherStatusView
+            android:id="@+id/wsv_today"
+            onThrottleFirstClick="@{() -> eventHolder.rvOnItemClick(item)}"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/activity_weather_title_today"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/activity_weather_today_text_size"
+            app:currentTemp="@{item.todayWeatherPresentation.theTemp}"
+            app:humidity="@{item.todayWeatherPresentation.humidity}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/wsv_tomorrow"
+            app:layout_constraintHorizontal_weight="4"
+            app:layout_constraintStart_toEndOf="@id/tv_list_title_local"
+            app:layout_constraintTop_toTopOf="parent"
+            app:weatherImageAbbr="@{item.todayWeatherPresentation.weatherStateAbbr}"
+            app:weatherName="@{item.todayWeatherPresentation.weatherStateName}"
+            tools:layout="@layout/view_weather_status"
+            tools:text="title" />
+
+        <com.sungjae.weather_forcast.customview.WeatherStatusView
+            android:id="@+id/wsv_tomorrow"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/activity_weather_title_tomorrow"
+            android:textColor="@color/black"
+            android:textSize="@dimen/activity_weather_tomorrow_text_size"
+            app:currentTemp="@{item.tomorrowWeatherPresentation.theTemp}"
+            app:humidity="@{item.tomorrowWeatherPresentation.humidity}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="4"
+            app:layout_constraintStart_toEndOf="@id/wsv_today"
+            app:layout_constraintTop_toTopOf="parent"
+            app:weatherImageAbbr="@{item.tomorrowWeatherPresentation.weatherStateAbbr}"
+            app:weatherName="@{item.tomorrowWeatherPresentation.weatherStateName}"
+            tools:layout="@layout/view_weather_status"
+            tools:text="title" />
+
+        <View
+            style="@style/Divider_Vertical"
+            app:layout_constraintStart_toEndOf="@+id/tv_list_title_local"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/Divider_Vertical"
+            app:layout_constraintStart_toEndOf="@+id/wsv_today"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            style="@style/Divider_Horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.sungjae.weather_forcast.WeatherListViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/activity_weather_side_padding">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_weather_title_height"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:text="@string/activity_weather_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/activity_weather_title_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/lay_refresh"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            bind:onRefreshListener="@{() -> vm.showWeatherInfo()}"
+            bind:refreshing="@{vm.isRefreshLiveData}">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_weather"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/border_gray_1dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                bind:contentItem="@{vm.weatherLiveData}"
+                bind:contentItemLayout="@{@layout/rv_item_content}"
+                bind:eventHolder="@{vm}"
+                bind:headerItemLayout="@{@layout/rv_item_header}"
+                bind:vm="@{vm}"
+                tools:itemCount="10"
+                tools:listitem="@layout/rv_item_content" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/border_gray_1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/lay_refresh"
+            app:layout_constraintEnd_toEndOf="@+id/lay_refresh"
+            app:layout_constraintStart_toStartOf="@+id/lay_refresh"
+            app:layout_constraintTop_toTopOf="@+id/lay_refresh" />
+
+        <include
+            android:id="@+id/loading_stub"
+            layout="@layout/progress_loading"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
