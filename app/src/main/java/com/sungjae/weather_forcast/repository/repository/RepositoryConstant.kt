@@ -1,0 +1,3 @@
+package com.sungjae.weather_forcast.repository.repository
+
+object RepositoryConstant
