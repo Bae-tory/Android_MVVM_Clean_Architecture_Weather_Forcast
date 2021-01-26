@@ -14,20 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fb8d21f-f01e-482a-903a-3bbb3c1afd2e" name="Default Changelist" comment="FIX : workspace.xml">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/WeatherListActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/WeatherListViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/domain/BaseSingleUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/domain/DomainConstant.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/domain/GetLocationListUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/domain/GetWeatherListUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/domain/base/BaseUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/domain/exception/InvalidSingleException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/PresentationConstant.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/base/BaseActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/base/BaseRecyclerViewAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/base/BaseViewHolder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/base/BaseViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/component/RecyclerViewSpaceItemDecoration.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/component/PresentationConstant.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/mapper/LocationPresentationMapper.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/mapper/Presentation.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/mapper/PresentationMapper.kt" afterDir="false" />
@@ -35,32 +22,22 @@
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/model/TodayWeatherPresentation.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/model/TomorrowWeatherPresentation.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/model/WeatherPresentation.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/local/LocalDataSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/local/LocalDataSourceImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/ui/WeatherListActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/presentation/ui/WeatherListViewModel.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/RemoteConstant.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/api/LocationApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/api/WeatherApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/exception/UnsupportedApiException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/mapper/LocationResponseMapper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/mapper/RemoteMapper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/mapper/WeatherResponseMapper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/model/Response.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/model/location/LocationResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/model/weather/ConsolidatedWeather.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/model/weather/Parent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/model/weather/Source.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/model/weather/WeatherResponse.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/source/LocationRemoteDataSource.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/source/LocationRemoteDataSourceImpl.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/source/WeatherRemoteDataSource.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/remote/source/WeatherRemoteDataSourceImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/repository/RepositoryConstant.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/source/LocationRepository.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/source/LocationRepositoryImpl.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/source/LocationRepositoryImpl_Factory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/source/WeatherRepository.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/source/WeatherRepositoryImpl.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sungjae/weather_forcast/repository/source/WeatherRepositoryImpl_Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_weather_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_weather_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/rv_item_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/rv_item_content.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,17 +357,73 @@
       <option name="project" value="LOCAL" />
       <updated>1611661430184</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="ADD : RepositoryConstant">
+      <created>1611661460493</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1611661460493</updated>
+    </task>
+    <task id="LOCAL-00024" summary="ADD : Local Data Source">
+      <created>1611661502785</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1611661502785</updated>
+    </task>
+    <task id="LOCAL-00025" summary="ADD : Remote Apis, Mapper, Response classes, Exception">
+      <created>1611661559352</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1611661559352</updated>
+    </task>
+    <task id="LOCAL-00026" summary="ADD : BaseUseCase for single">
+      <created>1611661588556</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1611661588556</updated>
+    </task>
+    <task id="LOCAL-00027" summary="ADD : domain exception">
+      <created>1611661602979</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1611661602979</updated>
+    </task>
+    <task id="LOCAL-00028" summary="ADD : Base UseCase for single">
+      <created>1611661629626</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1611661629626</updated>
+    </task>
+    <task id="LOCAL-00029" summary="ADD : RecyclerViewSpaceItemDecoration">
+      <created>1611661646217</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1611661646217</updated>
+    </task>
+    <task id="LOCAL-00030" summary="ADD : DomainConstant, Usecases (Location, Weather)">
+      <created>1611661693623</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1611661693623</updated>
+    </task>
+    <task id="LOCAL-00031" summary="ADD : Base Classes except usecase">
+      <created>1611661716426</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1611661716426</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ㄷㄷㄷㄷ" />
-    <MESSAGE value="aaaaa" />
-    <MESSAGE value="aaaaaㅁㄴㅇㄴㅁㅇ" />
-    <MESSAGE value="aaaaaㅁㄴㅇㄴㅁㅇsadasdas" />
-    <MESSAGE value="initial commit add .gitignore" />
-    <MESSAGE value="ADD : gradles / dependencies" />
-    <MESSAGE value="ADD : .idea" />
     <MESSAGE value="ADD : test" />
     <MESSAGE value="ADD : resource" />
     <MESSAGE value="ADD : all res" />
@@ -407,7 +440,16 @@
     <MESSAGE value="ADD : enums, uistate classes" />
     <MESSAGE value="ADD : Local mapper" />
     <MESSAGE value="ADD : repository Mapper (Location, Weather) , interface , models" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD : repository Mapper (Location, Weather) , interface , models" />
+    <MESSAGE value="ADD : RepositoryConstant" />
+    <MESSAGE value="ADD : Local Data Source" />
+    <MESSAGE value="ADD : Remote Apis, Mapper, Response classes, Exception" />
+    <MESSAGE value="ADD : BaseUseCase for single" />
+    <MESSAGE value="ADD : domain exception" />
+    <MESSAGE value="ADD : Base UseCase for single" />
+    <MESSAGE value="ADD : RecyclerViewSpaceItemDecoration" />
+    <MESSAGE value="ADD : DomainConstant, Usecases (Location, Weather)" />
+    <MESSAGE value="ADD : Base Classes except usecase" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD : Base Classes except usecase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1977" y="686" key="#PSD" timestamp="1611657799664">
@@ -430,9 +472,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2669" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611640807451" />
-    <state x="2639" y="308" width="492" height="423" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1611647801791">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="719" y="308" width="522" height="423" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1611661763506">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="719" y="308" width="522" height="423" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1611661763506" />
     <state x="719" y="308" width="486" height="423" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611562510556" />
     <state x="2639" y="308" width="492" height="423" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611647801791" />
     <state x="2460" y="275" key="AndroidCreateResourceFileDialog" timestamp="1611646692018">
@@ -444,15 +487,15 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2695" y="265" key="AndroidProcessChooserDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611647078102" />
-    <state x="577" y="90" key="CommitChangelistDialog2" timestamp="1611661429480">
+    <state x="577" y="90" key="CommitChangelistDialog2" timestamp="1611661737551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="577" y="90" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1611661429480" />
+    <state x="577" y="90" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1611661737551" />
     <state x="2497" y="90" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611651892898" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1611661401784">
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1611661500229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1611661401784" />
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040/1920.0.1080.1880@0.0.1920.1040" timestamp="1611661500229" />
     <state x="2104" y="86" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611650783493" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1611659619013">
       <screen x="0" y="0" width="1920" height="1040" />
