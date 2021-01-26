@@ -4,8 +4,9 @@
 
 https://developer.android.com/topic/libraries/architecture/images/final-architecture.png
 
+- MVVM, Clean Architecture
 - Presentation
 - Domain
 - Repository
 - Mapper
-- RxJava
+- RxJava, RxKotlin
