@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.retrofit2:converter-gson:2.8.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.8.2/7604192d2c6d9002139a322a6a582cf19fb5f7b7/converter-gson-2.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.8.2/773b4ec906bf47bdd3dfc0b572099985d2dc9597/converter-gson-2.8.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.8.2/a5a1c1f0ba6239347111be5d3bacf7476cc4f115/converter-gson-2.8.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
