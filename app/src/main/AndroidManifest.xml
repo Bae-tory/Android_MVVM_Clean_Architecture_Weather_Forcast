@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Idius">
-        <activity android:name="com.sungjae.weather_forcast.WeatherListActivity">
+        <activity android:name="com.sungjae.weather_forcast.presentation.ui.WeatherListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

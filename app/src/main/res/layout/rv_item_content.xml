@@ -15,7 +15,7 @@
 
         <variable
             name="vm"
-            type="com.sungjae.weather_forcast.WeatherListViewModel" />
+            type="com.sungjae.weather_forcast.presentation.ui.WeatherListViewModel" />
 
         <variable
             name="adapterPosition"
